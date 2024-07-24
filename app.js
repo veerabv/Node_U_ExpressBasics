@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-app.use(bodyParser.urlencoded({extende : false}))
+app.use(bodyParser.urlencoded({extended : false}))
 
 app.use("/add-product", (req, res, next) => {
   res.send(`
@@ -17,7 +17,7 @@ app.use("/add-product", (req, res, next) => {
     </form>`);
 });
 
-app.use("/product", (req, res, next) => {
+app.post("/product", (req, res, next) => {  // here this will be triggered only for post method
  console.log(req.body)  // this will be undefined because we have to parse the body from req
   res.redirect("/");    // after using body parser we can get the body as an object
 });

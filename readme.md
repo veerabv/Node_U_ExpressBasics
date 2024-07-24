@@ -34,3 +34,9 @@ npm install --save express
 npm install --save body-parse
 ```
 
+## How to restrict to a particular method (GET , POST ,PUT , DELETE , PATCH)
+
+ - generally app.use() -> for all method
+
+ - app.get() -> only get method
+
