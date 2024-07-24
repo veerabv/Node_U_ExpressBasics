@@ -24,5 +24,13 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
 npm install --save express
 ```
 
+ -> read the documentation for "use" method from express documentation
 
+ link -> https://expressjs.com/en/4x/api.html#app.use
+
+## Body-parser  -> which is used to parse the body from req , before we do it manually thanks to express
+
+```sh
+npm install --save body-parse
+```
 
