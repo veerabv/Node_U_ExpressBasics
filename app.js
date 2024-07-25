@@ -11,7 +11,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(adminRoutes)
+app.use('/admin',adminRoutes)  // if the request starts with /admin then it goes to adminRoutes or it will skipp
 app.use(shopRoutes)
 
 app.use((req,res,next) => {  
