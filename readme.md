@@ -55,11 +55,20 @@ router.get("/",(req,res,next) => {
      
     res.sendFile(path.join(__dirname,"../" ,"views","shop.html"))   // __dirname will give the root directory path of this file and select the path of this file . ,  the second param is to go one level up  
 
+    res.sendFile(path.join(__dirname,"..","views","add-product.html")) //you can use the .. instead of "../" to work in all os 
+
 
 
 })
 
 module.exports = router;
+
+
+this is helper function
+const path = require('path');
+
+
+module.exports = path.dirname(require.main.filename); // this is used to get the root directory of the project path , __dirname will give the exact path of the file we are working
 
 
 
