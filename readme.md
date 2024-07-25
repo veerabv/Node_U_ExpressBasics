@@ -72,3 +72,6 @@ module.exports = path.dirname(require.main.filename); // this is used to get the
 
 
 
+## Public files 
+
+app.use(express.static(path.join(__dirname, 'public')));  // this line will give the access to the file 
